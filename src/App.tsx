@@ -8,7 +8,7 @@ function App() {
     <MuiThemeProvider theme={theme} >
       <CssBaseline />
       <AppRouter />
-      </MuiThemeProvider>
+    </MuiThemeProvider>
   );
 }
 

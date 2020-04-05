@@ -1,11 +1,13 @@
 import React, { FC } from 'react'
 import { Link } from 'react-router-dom';
-import { Container, ListItem, List, Divider } from '@material-ui/core';
+import { Container, ListItem, List, Divider, Typography } from '@material-ui/core';
 
 const Home: FC<{}> = () => {
   return (
     <Container>
-      <div>material ui test2</div>
+      <Typography  variant="h2">
+        material-ui sample
+      </Typography>
       <Divider/>
       <List>
         <ListItem>
