@@ -1,5 +1,5 @@
 import React, { FC } from 'react';
-import { Container, Typography, Divider, Button, Box, createStyles, makeStyles, Theme, Icon } from '@material-ui/core';
+import { Container, Typography, Divider, Button, Box, createStyles, makeStyles, Theme, Icon, ButtonGroup } from '@material-ui/core';
 import DeleteIcon from '@material-ui/icons/Delete';
 
 const useStyles = makeStyles((theme: Theme) =>
@@ -46,6 +46,20 @@ const Buttons: FC<{}> = () => {
       <div className={classes.buttons}>
         <Button variant="outlined" startIcon={<DeleteIcon/>}>Delete</Button>
         <Button variant="outlined" color="primary" endIcon={<Icon>send</Icon>} size="large">Send</Button>
+      </div>
+
+      <div className={classes.buttons}>
+        <ButtonGroup color="primary" variant="contained">
+          <Button>one</Button>
+          <Button>two</Button>
+          <Button>three</Button>
+        </ButtonGroup>
+
+        <ButtonGroup color="primary" orientation="vertical" variant="contained">
+          <Button>one</Button>
+          <Button>two</Button>
+          <Button>three</Button>
+        </ButtonGroup>
       </div>
     </Container>
   );
