@@ -1,6 +1,7 @@
 import React, { FC } from 'react';
-import { Container, Typography, Divider, Button, Box, createStyles, makeStyles, Theme, Icon, ButtonGroup } from '@material-ui/core';
+import { Container, Divider, Button, createStyles, makeStyles, Theme, Icon, ButtonGroup } from '@material-ui/core';
 import DeleteIcon from '@material-ui/icons/Delete';
+import Header from 'components/globals/header';
 
 const useStyles = makeStyles((theme: Theme) =>
   createStyles({
@@ -16,9 +17,7 @@ const Buttons: FC<{}> = () => {
   const classes = useStyles()
   return (
     <Container>
-      <Box m={1}>
-        <Typography variant="h3">Button</Typography>
-      </Box>
+      <Header title="Button"/>
 
       <Divider/>
 

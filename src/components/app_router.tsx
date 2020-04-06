@@ -4,6 +4,7 @@ import Sample from 'components/sample'
 import Home from 'components/home'
 import Buttons from 'components/buttons'
 import { BrowserRouter } from 'react-router-dom';
+import Checkboxes from './checkboxes'
 
 const AppRouter: FC<{}> = () => {
   return (
@@ -11,6 +12,7 @@ const AppRouter: FC<{}> = () => {
       <Switch>
         <Route path="/sample" component={Sample} />
         <Route path="/buttons" component={Buttons} />
+        <Route path="/checkboxes" component={Checkboxes} />
         <Route path="/" component={Home} />
         <Redirect to="/" />
       </Switch>

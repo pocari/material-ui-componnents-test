@@ -16,6 +16,9 @@ const Home: FC<{}> = () => {
         <ListItem>
           <Link to={`/buttons`}>Buttons</Link>
         </ListItem>
+        <ListItem>
+          <Link to={`/checkboxes`}>Checkboxes</Link>
+        </ListItem>
       </List>
     </Container>
   )
